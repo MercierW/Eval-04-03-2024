@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
         console.error(error.message);
       }
     } else {
-      jsonPokemon = 'No Pokémon found...';
+      jsonPokemon = 'No Pkémon found...';
     }
 
     if (pokeP.innerText !== '') {

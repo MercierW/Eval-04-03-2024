@@ -13,7 +13,7 @@ const returnAnObject = (...args) => {
       index++;
     });
   } else {
-    response = 'No argument was given to the function.';
+    response = 'No argumen was given to the function.';
   }
   return response;
 };
