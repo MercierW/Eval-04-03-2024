@@ -25,8 +25,9 @@ const returnAnObject = (...args) => {
  * @return {array}
  */
 const multiplyAllByTwo = (arrayOfNumbers) => {
+  const arr = []
   let response;
-  if (arrayOfNumbers.constructor.prototype) {
+  if (arrayOfNumbers.constructor.prototype === arr.constructor.prototype) {
     response = arrayOfNumbers.map((val) => val * 2);
     console.log('arrayTimesTwo: ', response);
   } else {
