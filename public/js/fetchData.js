@@ -3,6 +3,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   const pokeDiv=document.getElementById('pokemon-info')
   const pokeAbilityBtn=document.getElementById('ability')
   
+  /**
+   * Fonction qui exécute une requête AJAX à l'API pokeapi pour récupérer un pokémon
+   *
+   */
   const fetchPokemon=async ()=>{
     const pokedexNum=Math.floor(Math.random() * 897)
     let foundPokemon=''
@@ -29,6 +33,10 @@ window.addEventListener('DOMContentLoaded',()=>{
     pokeAbilityBtn.removeAttribute('disabled')
   }
 
+  /**
+   * Fonction qui exécute une requête AJAX à l'API pokeapi pour récupérer une abilité
+   *
+   */
   const fetchPokemonAbilities=async()=>{
     const pokedexNum=Math.floor(Math.random() * 266)
     let foundAbilities=''
@@ -59,12 +67,20 @@ window.addEventListener('DOMContentLoaded',()=>{
     pokeAbility.innerText=`It now knows the move ${abilityToDisplay}!`
   }
   
+  /**
+   * Fonction qui exécute un écouteur d'évènement au click sur le bouton pokeBtn, qui va lancer la fonction fectchPokemon
+   *
+   */
   const invoquePokemon=()=>{
     const pokeBtn=document.getElementById('pokemon')
     pokeBtn.addEventListener('click', fetchPokemon)
     pokeDiv.appendChild(pokeP)
   }
 
+  /**
+   * Fonction qui exécute un écouteur d'évènement au click sur le bouton pokeAbilityBtn, qui va lancer la fonction fectchpokemonAbilities
+   *
+   */
   const pokemonAbility=()=>{
     pokeAbilityBtn.addEventListener('click', fetchPokemonAbilities)
     pokeDiv.appendChild(pokeAbility)

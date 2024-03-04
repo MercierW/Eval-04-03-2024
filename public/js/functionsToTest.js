@@ -1,3 +1,9 @@
+/**
+ *
+ *
+ * @param {object} args
+ * @return {string} 
+ */
 const returnAnObject = (...args) => {
   let response = {};
   if (args.length) {
@@ -12,6 +18,12 @@ const returnAnObject = (...args) => {
   return response;
 };
 
+/**
+ *
+ *
+ * @param {array} arrayOfNumbers
+ * @return {array} 
+ */
 const multiplyAllByTwo = (arrayOfNumbers) => {
   let response;
   if (arrayOfNumbers.constructor.prototype === new Array().constructor.prototype) {
