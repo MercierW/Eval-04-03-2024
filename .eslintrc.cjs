@@ -22,5 +22,11 @@ module.exports = {
     sourceType: 'module'
   },
   rules: {
+    semi: 'off',
+    'space-before-function-paren': ['error', {
+      anonymous: 'never',
+      named: 'never',
+      asyncArrow: 'always'
+    }]
   }
 }
