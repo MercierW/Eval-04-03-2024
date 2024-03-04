@@ -85,7 +85,10 @@ window.addEventListener('DOMContentLoaded',()=>{
     pokeAbilityBtn.addEventListener('click', fetchPokemonAbilities)
     pokeDiv.appendChild(pokeAbility)
   }
-  
+  /**
+   * IIF qui permet d'exécuter directement les fonctions invoquePokemon et PokemonAbility au dès qu'elle est définie
+   *
+   */
   (function startAll(){
     invoquePokemon()
     pokemonAbility()
