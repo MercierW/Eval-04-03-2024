@@ -1,8 +1,8 @@
 /**
  *
  *
- * @param {object} args
- * @return {string}
+ * @param {array} args
+ * @return {object}
  */
 const returnAnObject = (...args) => {
   let response = {};
@@ -13,7 +13,7 @@ const returnAnObject = (...args) => {
       index++;
     });
   } else {
-    response = 'No argumen was given to the function.';
+    response = 'No argument was given to the function.';
   }
   return response;
 };
@@ -35,3 +35,5 @@ const multiplyAllByTwo = (arrayOfNumbers) => {
   }
   return response;
 };
+
+exports.functionsToTest = { returnAnObject, multiplyAllByTwo }
